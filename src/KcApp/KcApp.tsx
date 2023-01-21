@@ -3,31 +3,18 @@ import type { KcContext } from "./kcContext";
 import KcAppBase, { defaultKcProps, useDownloadTerms, useI18n } from "keycloakify";
 import tos_en_url from "./tos_en.md";
 import tos_fr_url from "./tos_fr.md";
+import {useEffect} from "react";
 
 export type Props = {
     kcContext: KcContext;
 };
 
 export default function KcApp(props: Props) {
+    useEffect(() => {
+        document.title = "NoodleID";
+    }, []);
+
     const { kcContext } = props;
-
-    useDownloadTerms({
-        kcContext,
-        "downloadTermMarkdown": async ({ currentLanguageTag }) => {
-            const markdownString = await fetch(
-                (() => {
-                    switch (currentLanguageTag) {
-                        case "fr":
-                            return tos_fr_url;
-                        default:
-                            return tos_en_url;
-                    }
-                })(),
-            ).then(response => response.text());
-
-            return markdownString;
-        },
-    });
 
     const i18n = useI18n({
         kcContext,

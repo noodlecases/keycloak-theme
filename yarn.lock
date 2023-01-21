@@ -8628,7 +8628,7 @@ __metadata:
     "@types/node": ^15.3.1
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.4
-    keycloakify: ^6.8.4
+    keycloakify: ^6.8.14
     react: 18.1.0
     react-dom: 18.1.0
     react-scripts: 5.0.0
@@ -8636,7 +8636,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"keycloakify@npm:^6.8.4":
+"keycloakify@npm:^6.8.14":
   version: 6.8.14
   resolution: "keycloakify@npm:6.8.14"
   dependencies:
