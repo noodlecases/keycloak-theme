@@ -1,8 +1,6 @@
 import "./KcApp.css";
 import type { KcContext } from "./kcContext";
-import KcAppBase, { defaultKcProps, useDownloadTerms, useI18n } from "keycloakify";
-import tos_en_url from "./tos_en.md";
-import tos_fr_url from "./tos_fr.md";
+import KcAppBase, { defaultKcProps, useI18n } from "keycloakify";
 import {useEffect} from "react";
 
 export type Props = {
