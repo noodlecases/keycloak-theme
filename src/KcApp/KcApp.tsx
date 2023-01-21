@@ -36,18 +36,18 @@ export default function KcApp(props: Props) {
         // defined in the Keycloak admin UI for UserProfile
         // https://user-images.githubusercontent.com/6702424/182050652-522b6fe6-8ee5-49df-aca3-dba2d33f24a5.png
         "extraMessages": {
-            "en": {
-                "foo": "foo in English",
-                // Here we overwrite the default english value for the message "doForgotPassword" 
-                // that is "Forgot Password?" see: https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L17
-                "doForgotPassword": "I forgot my password"
-            },
-            "fr": {
-                /* spell-checker: disable */
-                "foo": "foo en Francais",
-                "doForgotPassword": "J'ai oublié mon mot de passe"
-                /* spell-checker: enable */
-            },
+            // "en": {
+            //     "foo": "foo in English",
+            //     // Here we overwrite the default english value for the message "doForgotPassword"
+            //     // that is "Forgot Password?" see: https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L17
+            //     "doForgotPassword": "I forgot my password"
+            // },
+            // "fr": {
+            //     /* spell-checker: disable */
+            //     "foo": "foo en Francais",
+            //     "doForgotPassword": "J'ai oublié mon mot de passe"
+            //     /* spell-checker: enable */
+            // },
         },
     });
 
@@ -63,7 +63,7 @@ export default function KcApp(props: Props) {
             {...{
                 ...defaultKcProps,
                 // NOTE: The classes are defined in ./KcApp.css
-                "kcHeaderWrapperClass": "my-color my-font",
+                "kcHeaderWrapperClass": "noodlecases-logo",
             }}
             //Uncomment the following line if you want to prevent the default .css to be downloaded
             //doFetchDefaultThemeResources={false} 

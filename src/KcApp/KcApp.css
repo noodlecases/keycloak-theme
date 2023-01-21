@@ -1,8 +1,33 @@
 
-.my-color {
-	color: red;
+.noodlecases-logo {
+	background-image: url(./noodlecases.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	background-size: 8em;
+	width: 8em;
+	height: 8em;
+	font-size: 0;
 }
 
-.my-font {
-	font-family: 'Work Sans';
+.noodlecases-logo span {
+	display: none;
+}
+
+.btn-primary {
+	background-color: #c04fd1;
+	background-image: linear-gradient(to bottom,#ee61ff 0,#ef29bb 100%);
+	background-repeat: repeat-x;
+	border-color: #b600d5;
+	color: #fff;
+}
+
+a {
+	color: #c100ce;
+}
+
+.login-pf body {
+	background: rgba(0, 0, 0, .5)  url("pexels-anni-roenkae-2693212.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-blend-mode: darken;
 }
