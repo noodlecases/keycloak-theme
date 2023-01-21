@@ -1,3 +1,7 @@
+.idea
+.yarnrc.yml
+.yarn
+
 # Logs
 logs
 *.log
